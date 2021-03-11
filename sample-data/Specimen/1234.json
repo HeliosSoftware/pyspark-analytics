@@ -1,0 +1,98 @@
+{
+  "resourceType": "Specimen",
+  "id": "1234",
+  "contained": [
+    {
+      "resourceType": "Substance",
+      "id": "hep",
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-EntityCode",
+            "code": "HEPL"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://ehr.acme.org/identifiers/collections",
+      "value": "23234352356"
+    }
+  ],
+  "accessionIdentifier": {
+    "system": "http://lab.acme.org/specimens/2011",
+    "value": "X352356"
+  },
+  "status": "available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "122555007",
+        "display": "Mammary tissue slide"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Chery Chalmers"
+  },
+  "receivedTime": "2011-03-04T07:03:00Z",
+  "request": [
+    {
+      "reference": "ServiceRequest/example"
+    }
+  ],
+  "collection": {
+    "collector": {
+      "reference": "Practitioner/example"
+    },
+    "collectedDateTime": "2011-05-30T06:15:00Z",
+    "quantity": {
+      "value": 6,
+      "unit": "mL"
+    },
+    "method": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0488",
+          "code": "LNV"
+        }
+      ]
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "49852007",
+          "display": "Structure of median cubital vein (body structure)"
+        }
+      ],
+      "text": "Right median cubital vein"
+    }
+  },
+  "container": [
+    {
+      "identifier": [
+        {
+          "value": "48736-15394-75465"
+        }
+      ],
+      "description": "Glass slide",
+      "type": {
+        "text": "Glass Slide"
+      },
+      "specimenQuantity": {
+        "value": 100,
+        "unit": "g"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Specimen is grossly lipemic"
+    }
+  ]
+}

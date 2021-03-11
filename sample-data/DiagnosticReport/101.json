@@ -1,0 +1,63 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "101",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "34117-2",
+          "display": "History and physical note"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "51847-2",
+          "display": "Evaluation+Plan note"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "34117-2",
+        "display": "History and physical note"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "51847-2",
+        "display": "Evaluation+Plan note"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient1"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "effectiveDateTime": "1970-03-13T20:46:34-07:00",
+  "issued": "1970-03-13T20:46:34.591-07:00",
+  "performer": [
+    {
+      "reference": "Practitioner?identifier=http://hl7.org/fhir/sid/us-npi|9999999659",
+      "display": "Dr. Reynaldo722 Ebert178"
+    }
+  ],
+  "specimen": {
+    "reference": "Specimen/1234"
+  },
+  "presentedForm": [
+    {
+      "contentType": "text/plain",
+      "data": "CjE5NzAtMDMtMTMKCiMgQ2hpZWYgQ29tcGxhaW50Ck5vIGNvbXBsYWludHMuCgojIEhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzCkNoZXJ5ODg3CiBpcyBhIDE2IHllYXItb2xkIG5vbi1oaXNwYW5pYyB3aGl0ZSBmZW1hbGUuCgojIFNvY2lhbCBIaXN0b3J5CiBQYXRpZW50IGhhcyBuZXZlciBzbW9rZWQgYW5kIGlzIGFuIGFsY29ob2xpYy4KIFBhdGllbnQgaWRlbnRpZmllcyBhcyBoZXRlcm9zZXh1YWwuCgpQYXRpZW50IGNvbWVzIGZyb20gYSBtaWRkbGUgc29jaW9lY29ub21pYyBiYWNrZ3JvdW5kLgoKUGF0aWVudCBjdXJyZW50bHkgaGFzIFVuaXRlZEhlYWx0aGNhcmUuCgojIEFsbGVyZ2llcwpObyBLbm93biBBbGxlcmdpZXMuCgojIE1lZGljYXRpb25zCk5vIEFjdGl2ZSBNZWRpY2F0aW9ucy4KCiMgQXNzZXNzbWVudCBhbmQgUGxhbgpQYXRpZW50IGlzIHByZXNlbnRpbmcgd2l0aCBtYWxpZ25hbnQgbmVvcGxhc20gb2YgYnJlYXN0IChkaXNvcmRlcikuIAoKIyMgUGxhbgoK"
+    }
+  ]
+}
